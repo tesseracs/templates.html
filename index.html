@@ -3,13 +3,39 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tesseracs HTML template</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta
+    name="description"
+    content="A static product starter with a launch dashboard, semantic HTML, modular JavaScript, and polished CSS."
+  />
+  <title>Northstar Launch Desk</title>
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <h1>Tesseracs HTML template</h1>
-  <p>Multi-file example: <code>index.html</code> loads <code>styles.css</code> and <code>app.js</code> (which imports <code>greeter.js</code>).</p>
-  <div id="app"></div>
-  <script type="module" src="app.js"></script>
+  <div class="page-shell">
+    <header class="hero">
+      <p class="eyebrow">Static Product Starter</p>
+      <div class="hero-copy">
+        <div>
+          <h1>Northstar Launch Desk</h1>
+          <p class="hero-text">
+            A small, static dashboard template for teams tracking milestones, launch readiness,
+            and focus items without a framework.
+          </p>
+        </div>
+        <div class="hero-note">
+          <p>Built with plain HTML, CSS, and ES modules.</p>
+          <p>Use it as a starter for internal tools, microsites, or interactive prototypes.</p>
+        </div>
+      </div>
+    </header>
+
+    <main id="app" class="dashboard" aria-live="polite"></main>
+
+    <footer class="footer">
+      <p>Start in <code>index.html</code>, style in <code>styles.css</code>, and extend behavior from <code>main.js</code> and <code>src/</code>.</p>
+    </footer>
+  </div>
+
+  <script type="module" src="./main.js"></script>
 </body>
 </html>
